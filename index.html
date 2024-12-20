@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Tools Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" class="hidden">
+        <h1>Admin Tools</h1>
+        
+        <!-- 玩家操作按钮 -->
+        <button onclick="kickPlayer(1)">Kick Player 1</button>
+        <button onclick="kickPlayer(2)">Kick Player 2</button>
+        <button onclick="kickPlayer(3)">Kick Player 3</button>
+        
+        <!-- 全部踢出 -->
+        <button onclick="kickAllPlayers()">Kick All Players</button>
+        
+        <!-- 禁言按钮 -->
+        <button onclick="mutePlayer(1)">Mute Player 1</button>
+        <button onclick="mutePlayer(2)">Mute Player 2</button>
+        
+        <!-- 冻结按钮 -->
+        <button onclick="freezePlayer(1)">Freeze Player 1</button>
+        <button onclick="freezePlayer(2)">Freeze Player 2</button>
+        
+        <!-- 更改天气按钮 -->
+        <button onclick="changeWeather('CLEAR')">Clear Weather</button>
+        <button onclick="changeWeather('RAIN')">Rainy Weather</button>
+        
+        <!-- 关闭菜单 -->
+        <button onclick="closeMenu()">Close Menu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
